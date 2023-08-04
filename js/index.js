@@ -2,6 +2,8 @@
  * 主界面运行 main 方法
  * by littlefean
  */
+let game
+
 window.onload = function () {
     // 三角形游戏按钮
     $(".triangle").onclick = function () {
@@ -42,7 +44,7 @@ window.onload = function () {
     $(".normalOption .play").onclick = function () {
         let gameDiv = $(".normalGameDiv");
         gameDiv.style.display = "block";
-        let game = new NormalGame(gameDiv, normalOption);
+        game = new NormalGame(gameDiv, normalOption);
         normalOption.style.display = "none";
     }
 
